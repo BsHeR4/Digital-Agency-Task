@@ -1,0 +1,566 @@
+/* Start General */
+:root {
+    --custom-button-color: #8EADD5;
+    --custom-hover-button-color: #729ed7;
+    --custom-active-button-color: #6094d7;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box !important;
+}
+
+.sectionHeader {
+    max-width: 435.6867px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+}
+
+.whiteSpacing {
+    padding-left: 188px !important;
+    padding-right: 188px !important;
+}
+
+.btn-custom-button {
+    height: 48px;
+    width: 167px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--custom-button-color);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: var(--custom-hover-button-color);
+    --bs-btn-focus-shadow-rgb: var(--custom-hover-button-color);
+    --bs-btn-active-color: var(--bs-white);
+    --bs-btn-active-bg: var(--custom-active-button-color);
+}
+
+/* End General */
+
+
+/* Start Nav */
+
+.bg-body-tertiary {
+    background-color: #FDFCFC !important;
+}
+
+.navbar {
+    padding-top: 46px !important;
+}
+
+.navbar-nav {
+    gap: 44px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* End Nav */
+
+/* Start Hero */
+
+.hero {
+    height: calc(100vh - 70px);
+}
+
+.hero h1 {
+    max-width: 540px;
+    padding-bottom: 24px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
+
+.hero p {
+    padding-bottom: 39px;
+    font-size: 18px;
+    line-height: 27.5px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
+
+.hero img {
+    max-width: 450px;
+    max-height: 450px;
+}
+
+/* End Hero */
+
+/* Start Companies Section */
+.companiesSection {
+    padding-bottom: 136px;
+
+    .container {
+        max-width: 100%;
+        padding: 24px;
+        border-radius: 8px;
+        background-color: #F6F6F6;
+
+    }
+
+    p {
+        width: fit-content;
+        color: #667085;
+    }
+}
+
+/* End Companies Section */
+
+
+/* Start Branding Section */
+
+.brandingSection {
+
+    padding-bottom: 136px;
+
+    .container {
+        max-width: fit-content;
+
+        h2 {
+            padding-bottom: 26px !important;
+
+        }
+
+        p {
+            max-width: 392.2168px;
+            padding-bottom: 45px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+/* End Branding Section */
+
+
+/* Start Custome Section */
+
+.customeSection {
+
+    padding-bottom: 136px;
+
+    .container {
+        max-width: fit-content;
+
+        h2 {
+            padding-bottom: 26px !important;
+        }
+
+        p {
+            max-width: 392.2168px;
+            padding-bottom: 45px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+/* End Custome Section */
+
+
+/* Start Testimonials Section */
+
+.testimonialsSection {
+    padding-bottom: 136px;
+
+    h2 {
+        padding-top: 16px !important;
+        padding-bottom: 39px !important;
+        text-align: center;
+    }
+
+    img {
+        max-width: 130px;
+    }
+}
+
+.carousel-indicators {
+    padding-top: 40px !important;
+    width: fit-content;
+    gap: 24px;
+    transition: none;
+    position: static !important;
+
+    button {
+        width: 16px !important;
+        height: 16px !important;
+        border-radius: 50% !important;
+        border: 3px solid var(--custom-button-color) !important;
+    }
+
+    .active {
+        width: 24px !important;
+        height: 24px !important;
+        border: none !important;
+        background-color: var(--custom-button-color) !important;
+    }
+
+}
+
+/* .carousel.slide {
+    width: 100%;
+} */
+
+.carousel-inner {
+
+    gap: 15px;
+
+    .carousel-item:nth-child(3) {
+        display: block;
+    }
+
+    .carousel-item:nth-child(5) {
+        display: block;
+    }
+
+    .carousel-item {
+        padding: 32px;
+        border-radius: 20px;
+        max-width: max-content;
+        width: calc(90% / 3);
+        background-color: #F6F6F6;
+
+        h3 {
+            max-width: min-content;
+            padding-top: 8px !important;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        p {
+            padding-top: 27px !important;
+            max-width: 281px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 130%;
+            text-align: center;
+            text-transform: capitalize;
+            color: #272D38;
+
+        }
+    }
+}
+
+/* End Testimonials Section */
+
+
+/* Start Contact Us */
+
+.contactSection {
+    padding-bottom: 136px;
+
+    .container {
+        padding: 100px 0px !important;
+        max-width: fit-content;
+    }
+
+    .contactBox {
+        padding: 0px 82px;
+        background-color: #F6F6F6;
+        border-radius: 20px;
+        max-width: 1065px;
+
+        h2 {
+            padding-bottom: 16px;
+            max-width: 361px;
+        }
+
+        p {
+            padding-bottom: 32px;
+            max-width: 360px;
+        }
+    }
+
+}
+
+footer {
+    background-color: #F6F6F6;
+
+    .container {
+        max-width: 100%;
+        padding-top: 105px !important;
+        padding-bottom: 86px !important;
+
+        h2 {
+            padding-bottom: 32px;
+            font-weight: 700;
+            font-size: 18px;
+            text-align: start;
+        }
+
+        p {
+            max-width: 189.2911px;
+            text-align: start;
+            font-weight: 300;
+        }
+
+        a {
+            text-decoration: none;
+            color: #272D38;
+        }
+
+        li {
+            padding-bottom: 24px;
+            list-style: none;
+            text-align: start;
+            font-weight: 300;
+        }
+    }
+
+    .copyright {
+        padding-bottom: 18px;
+        font-weight: 300;
+    }
+
+}
+
+/* End Contact Us */
+
+@media screen and (max-width: 992px) {
+
+    /* Start General */
+
+    * {
+        text-align: center;
+    }
+
+    .whiteSpacing {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    /* End General */
+
+
+
+    /* Start Hero */
+
+    .hero {
+        padding-top: 95px;
+        height: calc(100vh - 85.6px);
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        padding-bottom: 24px;
+        font-size: 16px;
+    }
+
+    .hero img {
+        min-width: 300px;
+        min-height: 300px;
+        width: 31.25vw;
+    }
+
+    /* End Hero */
+
+
+    /* Start Comanies Section */
+
+    .companiesSection {
+        padding-top: 120px;
+        padding-bottom: 88px;
+
+        .container {
+            padding: 31.22px 16px;
+        }
+
+        img {
+            max-width: 50px;
+        }
+
+    }
+
+    /* End Comanies Section */
+
+
+
+    /* Start Branding Section */
+
+    .brandingSection {
+        padding-bottom: 120px;
+
+        img:first-child {
+            max-width: 375px;
+            max-width: 384px;
+            padding-top: 25px;
+        }
+
+        .container {
+
+            h2 {
+                padding-bottom: 24px !important;
+                font-size: 32px;
+            }
+
+            p {
+                padding-bottom: 32px !important;
+                font-size: 14px !important;
+            }
+
+            .icon {
+                content: url(./../img/down-arrow.svg);
+            }
+        }
+
+    }
+
+    /* End Branding Section */
+
+
+
+    /* Start Custome Section */
+
+    .customeSection {
+        padding-bottom: 120px;
+
+        img:first-child {
+            max-width: 384px;
+            padding-top: 25px;
+        }
+
+        .container {
+
+            h2 {
+                padding-bottom: 24px !important;
+                font-size: 32px;
+            }
+
+            p {
+                padding-bottom: 32px !important;
+                font-size: 14px !important;
+            }
+
+            .icon {
+                content: url(./../img/down-arrow.svg);
+            }
+        }
+
+    }
+
+    /* End Custome Section */
+
+    /* Start Testimonials Section */
+    .testimonialsSection {
+        padding-bottom: 120px;
+
+        .carousel-inner {
+
+            gap: 15px;
+
+            .carousel-item:nth-child(3) {
+                display: none;
+            }
+
+            .carousel-item:nth-child(5) {
+                display: none;
+            }
+
+            .carousel-item {
+                max-width: max-content;
+                width: 100%;
+
+                h2 {
+                    font-weight: 700 !important;
+                    font-size: 32px !important;
+                    line-height: 100%;
+                }
+            }
+
+        }
+    }
+
+    /* End Testimonials Section */
+
+    /* Start Contact Us */
+    .contactSection {
+        padding-bottom: 128px;
+
+        .container {
+            padding: 0 !important;
+        }
+
+        .contactBox {
+            padding: 52.5px 35px;
+
+            h2 {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 100%;
+                text-align: center;
+            }
+
+            p {
+                line-height: 27.5px;
+                text-align: center;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    /* End Contact Us */
+
+    /* Start Footer */
+    footer {
+        .container {
+            padding-top: 104px !important;
+            padding-bottom: 20px !important;
+
+            .item {
+                padding-bottom: 72px;
+            }
+
+            h2 {
+                padding-bottom: 24px;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            li {
+                text-align: center;
+            }
+        }
+
+        .copyright {
+            padding-bottom: 24px;
+            font-size: 12px;
+        }
+
+    }
+
+    /* End Footer */
+
+}
+
+@media screen and (max-width: 576px) {
+    .brandingSection {
+
+        img:first-child {
+            max-width: 280px;
+            max-width: 280px;
+        }
+    }
+
+    .customeSection {
+
+        img:first-child {
+            max-width: 280px;
+            max-width: 280px;
+        }
+    }
+}
