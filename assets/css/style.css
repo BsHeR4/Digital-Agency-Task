@@ -40,6 +40,9 @@
 
 /* End General */
 
+body {
+    background-color: #FDFCFC;
+}
 
 /* Start Nav */
 
@@ -49,6 +52,15 @@
 
 .navbar {
     padding-top: 46px !important;
+
+    h1 {
+        font-weight: 700;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        color: #272D38;
+    }
 }
 
 .navbar-nav {
@@ -73,11 +85,13 @@
     font-weight: 700;
     font-size: 64px;
     line-height: 100%;
-    letter-spacing: 0%;
     text-transform: capitalize;
+    box-shadow: -450px -7em 300em #8eadd5b0;
+    backdrop-filter: blur(306px);
 }
 
 .hero p {
+    max-width: 525px;
     padding-bottom: 39px;
     font-size: 18px;
     line-height: 27.5px;
@@ -162,9 +176,9 @@
 /* End Custome Section */
 
 
-/* Start Testimonials Section */
+   /* Start Testimonials Section */
 
-.testimonialsSection {
+   .testimonialsSection {
     padding-bottom: 136px;
 
     h2 {
@@ -205,15 +219,18 @@
     width: 100%;
 } */
 
-.carousel-inner {
+    /* .carousel-inner::after {
+        display: none;
+    } */
 
+.carousel-inner {
     gap: 15px;
 
-    .carousel-item:nth-child(3) {
+    .carousel-item:nth-child(2) {
         display: block;
     }
 
-    .carousel-item:nth-child(5) {
+    .carousel-item:nth-child(4) {
         display: block;
     }
 
@@ -225,7 +242,7 @@
         background-color: #F6F6F6;
 
         h3 {
-            max-width: min-content;
+            max-width: fit-content;
             padding-top: 8px !important;
             font-size: 18px;
             font-weight: 400;
@@ -265,6 +282,7 @@
         background-color: #F6F6F6;
         border-radius: 20px;
         max-width: 1065px;
+        gap: 90px;
 
         h2 {
             padding-bottom: 16px;
@@ -457,11 +475,11 @@ footer {
 
             gap: 15px;
 
-            .carousel-item:nth-child(3) {
+            .carousel-item:nth-child(2) {
                 display: none;
             }
 
-            .carousel-item:nth-child(5) {
+            .carousel-item:nth-child(4) {
                 display: none;
             }
 
