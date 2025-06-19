@@ -333,8 +333,6 @@ footer {
 
     /* Start General */
 
-
-
     .whiteSpacing {
         padding-left: 24px !important;
         padding-right: 24px !important;
@@ -342,6 +340,12 @@ footer {
 
     /* End General */
 
+
+    /* Start Nav */
+    .navbar-nav:first-child {
+        padding-top: 40px;
+    }
+    /* End Nav */
 
 
     /* Start Hero */
@@ -456,6 +460,7 @@ footer {
     /* End Custome Section */
 
     /* Start Testimonials Section */
+
     .testimonialsSection {
         padding-bottom: 120px;
 
