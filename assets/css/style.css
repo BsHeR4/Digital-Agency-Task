@@ -165,9 +165,9 @@ body {
 /* End Custome Section */
 
 
-   /* Start Testimonials Section */
+/* Start Testimonials Section */
 
-   .testimonialsSection {
+.testimonialsSection {
     padding-bottom: 136px;
 
     h2 {
@@ -201,31 +201,30 @@ body {
 
 }
 
-/* .carousel.slide {
+.carousel.slide {
     width: 100%;
-} */
+}
 
-    /* .carousel-inner::after {
-        display: none;
-    } */
+.carousel-inner::after {
+    display: none;
+}
 
 .carousel-inner {
     gap: 15px;
-
-    .carousel-item:nth-child(2) {
-        display: block;
-    }
-
-    .carousel-item:nth-child(4) {
-        display: block;
-    }
+    width: 100%;
 
     .carousel-item {
+        transform: translateX(calc((3%) + (-15px)));
+        display: block;
+        width: calc(100% / 3);
+        max-width: calc((100% - 30px) / 3);
         padding: 32px;
+        margin: 0;
         border-radius: 20px;
-        max-width: max-content;
-        width: calc(90% / 3);
+        position: static !important;
+        float: none;
         background-color: #F6F6F6;
+        transition: all 0.4s ease-in-out;
 
         h3 {
             max-width: fit-content;
@@ -243,6 +242,18 @@ body {
 
         }
     }
+}
+
+.mobileIndicators {
+    display: none !important;
+}
+
+.carousel-inner:has(.carousel-item:first-child.active) .carousel-item {
+    transform: translateX(calc(100% + 15px));
+}
+
+.carousel-inner:has(.carousel-item:last-child.active) .carousel-item {
+    transform: translateX(calc(-100% + -15px));
 }
 
 /* End Testimonials Section */
@@ -450,17 +461,10 @@ footer {
 
             gap: 15px;
 
-            .carousel-item:nth-child(2) {
-                display: none;
-            }
-
-            .carousel-item:nth-child(4) {
-                display: none;
-            }
-
             .carousel-item {
-                max-width: max-content;
+                transform: none;
                 width: 100%;
+                max-width: calc(100% - 30px);
 
                 h2 {
                     font-weight: 700 !important;
@@ -470,6 +474,27 @@ footer {
             }
 
         }
+
+    }
+
+    .carousel-inner:has(.carousel-item:first-child.active) .carousel-item {
+        transform: translateX(calc(200% + 15px));
+    }
+
+    .carousel-inner:has(.carousel-item:last-child.active) .carousel-item {
+        transform: translateX(calc(-200% + -15px));
+    }
+
+    .carousel-inner:has(.carousel-item:nth-child(2).active) .carousel-item {
+        transform: translateX(calc(100% + 15px));
+    }
+
+    .carousel-inner:has(.carousel-item:nth-child(4).active) .carousel-item {
+        transform: translateX(calc(-100% + -15px));
+    }
+
+    .mobileIndicators {
+        display: block !important;
     }
 
     /* End Testimonials Section */
